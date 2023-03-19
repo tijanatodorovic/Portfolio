@@ -1,0 +1,549 @@
+@media screen and (max-width: 1025px) {
+  nav .logo {
+    font-size: 35px;
+  }
+  .bgImage {
+    height: 600px;
+  }
+  .bgImage-transparent .bgImage-text {
+    margin: 65px 0px 0px 70px;
+    padding: 18px;
+  }
+  .bgImage-transparent .bgImage-text h2 {
+    font-size: 50px;
+  }
+  .bgImage-transparent .bgImage-text h1 {
+    font-size: 60px;
+  }
+  .about {
+    margin: 100px 20px;
+  }
+}
+
+@media screen and (max-width: 987px) {
+  .services-flex .services-wrapper {
+    width: 250px;
+    height: 320px;
+  }
+}
+
+@media screen and (max-width: 906px) {
+  .services-flex .services-wrapper {
+    width: 250px;
+    height: 370px;
+  }
+}
+
+@media screen and (max-width: 889px) {
+  nav .logo {
+    padding-left: 100px;
+  }
+  .about .profile-pic {
+    height: 400px;
+  }
+}
+
+@media screen and (max-width: 769px) {
+  nav .logo {
+    font-size: 32px;
+    padding-left: 50px;
+  }
+  nav ul {
+    padding-right: 10px;
+  }
+  nav ul li {
+    padding-right: 25px;
+  }
+  .bgImage {
+    background-position: center;
+    height: 550px;
+  }
+  .bgImage-transparent {
+    background-color: rgba(13, 12, 12, 0.1);
+  }
+  .bgImage-transparent .bgImage-text {
+    margin: 62px 0px 0px 60px;
+  }
+  .bgImage-transparent .bgImage-text h2 {
+    font-size: 50px;
+  }
+  .bgImage-transparent .bgImage-text h1 {
+    font-size: 60px;
+  }
+  .about {
+    margin: 100px 5px;
+  }
+  .about .profile {
+    width: 85%;
+    margin: 70px auto;
+  }
+  .about .profile-pic {
+    height: 400px;
+  }
+  .services-flex {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    margin-top: unset;
+  }
+  .services-flex .services-wrapper {
+    margin-top: 40px;
+    margin-right: unset;
+    height: 300px;
+  }
+  .services-flex .services-wrapper-icon {
+    width: 55px;
+    height: 55px;
+    padding-top: 10px;
+    font-size: 25px;
+    margin-bottom: 12px;
+  }
+  .project-wrapper .projectOne, .project-wrapper .projectTwo {
+    background-position: top;
+  }
+  .project-wrapper h3 a {
+    font-size: 22px;
+  }
+}
+
+@media screen and (max-width: 808px) {
+  nav .logo {
+    padding-left: 40px;
+  }
+}
+
+@media screen and (max-width: 629px) {
+  nav .logo {
+    padding-left: 10px;
+  }
+}
+
+@media screen and (max-width: 671px) {
+  .search {
+    padding: 10px 10px 0px 0px;
+    visibility: hidden;
+  }
+  .search i {
+    font-size: 11px;
+  }
+  .profile {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    margin: 0px auto;
+  }
+  .profile-info-left {
+    text-align: center;
+    margin-top: 20px;
+  }
+  .profile-info-left .profile-info-mini {
+    margin-top: 12px;
+  }
+  .profile-pic {
+    margin: 0px auto;
+  }
+}
+
+@media screen and (max-width: 599px) {
+  nav {
+    height: 100px;
+    display: block;
+  }
+  nav .logo {
+    text-align: center;
+    padding-top: 9px;
+    padding-left: unset;
+  }
+}
+
+@media screen and (max-width: 511px) {
+  nav {
+    height: 100px;
+    display: block;
+  }
+  nav ul {
+    margin: 0px 70px;
+  }
+  nav ul:last-child {
+    margin-right: unset;
+  }
+  nav ul li {
+    font-size: 16px;
+  }
+}
+
+@media screen and (max-width: 426px) {
+  .bgImage {
+    background-position: left;
+  }
+  .bgImage-transparent {
+    background-color: rgba(13, 12, 12, 0.1);
+  }
+  .bgImage-transparent .search {
+    padding: 10px 10px 0px 0px;
+    visibility: hidden;
+  }
+  .bgImage-transparent .search i {
+    font-size: 11px;
+  }
+  .bgImage-transparent .bgImage-text {
+    margin: 50px 0px 0px 20px;
+  }
+  .bgImage-transparent .bgImage-text h2 {
+    font-size: 40px;
+    text-shadow: 1px 1px 17px black;
+  }
+  .bgImage-transparent .bgImage-text h1 {
+    font-size: 52px;
+    padding-top: 17px;
+    padding-bottom: 18px;
+  }
+  .bgImage-transparent .bgImage-text-moreAboutMe {
+    font-size: 15px;
+  }
+  .profile {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    margin: 0px auto;
+  }
+  .profile-info-left {
+    text-align: center;
+    margin-top: 20px;
+  }
+  .profile-info-left .profile-info-mini {
+    margin-top: 12px;
+  }
+  .portfolio-header p {
+    padding: 12px 15px 0px 15px;
+    line-height: 25px;
+  }
+  .portfolio-projects {
+    display: block;
+  }
+  .portfolio-projects .project-wrapper {
+    width: 85%;
+    margin: 0px auto;
+    margin-top: 25px;
+  }
+  .portfolio-projects .project-wrapper:first-child {
+    margin-top: unset;
+  }
+  .contact-me {
+    width: 300px;
+  }
+  .contact-me input[type="text"], .contact-me input[type="email"], .contact-me textarea {
+    width: 300px;
+  }
+  .contact-me textarea {
+    height: 200px;
+    text-align: left;
+  }
+  .contact-me input[type="submit"] {
+    width: 120px;
+    padding: 12px 0px;
+    font-size: 20px;
+  }
+  .fixed {
+    width: 35px;
+    height: 35px;
+    border: 1px solid white;
+    right: 5px;
+    bottom: 5px;
+    padding-top: 9px;
+    font-size: 12px;
+  }
+}
+
+@media screen and (max-width: 453px) {
+  nav {
+    height: 100px;
+    display: block;
+  }
+  nav ul {
+    margin: 0px 100px;
+  }
+  nav ul:last-child {
+    margin-right: unset;
+  }
+  nav ul li {
+    font-size: 14px;
+  }
+}
+
+@media screen and (max-width: 415px) {
+  nav {
+    height: 235px;
+    margin-top: unset;
+  }
+  nav ul {
+    width: 100%;
+    text-align: center;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    padding-right: unset;
+    padding-top: 15px;
+  }
+  nav ul li {
+    font-size: 16px;
+    padding-right: unset;
+    border-bottom: 2px solid white;
+    padding: 2px 0px;
+  }
+  nav ul li:last-child {
+    border-bottom: none;
+  }
+}
+
+@media screen and (max-width: 396px) {
+  .skills .progress-bar-bg .progress-bar {
+    width: 220px;
+  }
+  .skills .progress-bar-bg .progress-bar-skill-text {
+    width: 220px;
+    height: 15px;
+    line-height: 10px;
+    font-size: 14px;
+  }
+  .skills .progress-bar-bg .progress-bar-skill-out {
+    width: 220px;
+    height: 15px;
+    -webkit-transition: width 1s;
+    transition: width 1s;
+  }
+  .skills .progress-bar-bg .progress-bar-skill-out:hover {
+    width: 250px;
+  }
+  .fixed {
+    width: 40px;
+    height: 40px;
+    bottom: 50px;
+    right: 50px;
+    padding-top: 11px;
+  }
+}
+
+@media screen and (max-width: 376px) {
+  .bgImage {
+    background-position: center;
+  }
+  .bgImage-transparent {
+    background-color: rgba(13, 12, 12, 0.2);
+  }
+  .bgImage-transparent .bgImage-text {
+    margin: 20px 0px 0px 20px;
+  }
+  .bgImage-transparent .bgImage-text h2 {
+    font-size: 33px;
+  }
+  .bgImage-transparent .bgImage-text h1 {
+    font-size: 45px;
+    padding-top: 17px;
+    padding-bottom: 12px;
+  }
+  .bgImage-transparent .bgImage-text-UI h3 {
+    font-size: 16px;
+  }
+  .bgImage-transparent .bgImage-text-moreAboutMe {
+    font-size: 14px;
+    width: 160px;
+    margin: 15px auto;
+  }
+  .about {
+    margin: 20px;
+  }
+  .about-headers h4 {
+    font-size: 16px;
+  }
+  .about-headers h2 {
+    font-size: 25px;
+  }
+  .about .profile {
+    margin: 33px auto;
+  }
+  .about .profile-info {
+    padding-right: 25px;
+    width: 500px;
+    margin: 0px auto;
+  }
+  .about .profile-info h3 {
+    font-size: 20px;
+  }
+  .about .profile-info .special-parag {
+    font-size: 16px;
+    text-align: justify;
+  }
+  .about .profile-info-mini {
+    margin: 6px 0px;
+  }
+  .about .profile-info-mini p {
+    font-size: 15px;
+  }
+  .about-headers {
+    margin-top: 40px;
+  }
+  .about-headers h4 {
+    font-size: 16px;
+  }
+  .about-headers h2 {
+    font-size: 25px;
+  }
+  .skills .progress-bar-bg .progress-bar {
+    width: 220px;
+  }
+  .skills .progress-bar-bg .progress-bar-skill-text {
+    width: 220px;
+    height: 15px;
+    line-height: 10px;
+    font-size: 14px;
+  }
+  .skills .progress-bar-bg .progress-bar-skill-out {
+    width: 220px;
+    height: 15px;
+    -webkit-transition: width 1s;
+    transition: width 1s;
+  }
+  .skills .progress-bar-bg .progress-bar-skill-out:hover {
+    width: 250px;
+  }
+  .services-flex {
+    width: 65%;
+  }
+  .services-flex .services-wrapper-icon {
+    width: 55px;
+    height: 55px;
+    margin: 0px auto;
+    padding-top: 15px;
+    font-size: 20px;
+    margin-bottom: 12px;
+  }
+  .portfolio-projects {
+    width: 85%;
+  }
+  .portfolio-projects .project-wrapper h3 a {
+    font-size: 20px;
+  }
+  .portfolio-projects .project-wrapper .projectOne, .portfolio-projects .project-wrapper .projectTwo {
+    height: 200px;
+  }
+  .contact-me {
+    width: 250px;
+  }
+  .contact-me input[type="text"], .contact-me input[type="email"], .contact-me textarea {
+    width: 250px;
+    padding: 10px;
+  }
+  .contact-me textarea {
+    height: 120px;
+  }
+  .contact-me input[type="submit"] {
+    width: 100px;
+    padding: 10px 0px;
+    font-size: 18px;
+  }
+  footer .footer-top {
+    font-size: 13px;
+  }
+  footer .footer-bottom ul {
+    width: 350px;
+  }
+}
+
+@media screen and (max-width: 321px) {
+  .bgImage-transparent .bgImage-text {
+    margin: 30px 0px 0px 20px;
+  }
+  .bgImage-transparent .bgImage-text h2 {
+    font-size: 28px;
+  }
+  .bgImage-transparent .bgImage-text h1 {
+    font-size: 42px;
+    padding-top: 17px;
+    padding-bottom: 10px;
+  }
+  .bgImage-transparent .bgImage-text-UI h3 {
+    font-size: 13px;
+  }
+  .bgImage-transparent .bgImage-text-moreAboutMe {
+    font-size: 11px;
+    width: 120px;
+    margin: 11px auto;
+    padding: 9px 0px;
+  }
+  .about {
+    margin: 10px;
+  }
+  .about-headers h4 {
+    font-size: 14px;
+  }
+  .about-headers h2 {
+    font-size: 20px;
+  }
+  .about .profile {
+    margin: 30px auto;
+  }
+  .about .profile-info {
+    padding-right: 25px;
+    width: 500px;
+    margin: 0px auto;
+  }
+  .about .profile-info h3 {
+    font-size: 17px;
+  }
+  .about .profile-info .special-parag {
+    font-size: 14px;
+    text-align: justify;
+  }
+  .about .profile-info-mini {
+    margin: 6px 0px;
+  }
+  .about .profile-info-mini h4 {
+    font-size: 14px;
+  }
+  .about .profile-info-mini p {
+    font-size: 13px;
+  }
+  .about .profile-pic {
+    height: 300px;
+  }
+  .about-headers {
+    margin-top: 50px;
+  }
+  .about-headers h4 {
+    font-size: 15px;
+  }
+  .about-headers h2 {
+    font-size: 20px;
+  }
+  .contact-header {
+    text-align: center;
+    padding-top: 40px;
+    padding-bottom: unset;
+    color: white;
+    margin: 0px auto;
+  }
+  .socials {
+    width: 30px;
+    padding: 9px 0px 9px 9px;
+  }
+  .socials a i {
+    padding-bottom: 15px;
+    font-size: 13px;
+  }
+  footer .footer-top {
+    font-size: 13px;
+  }
+  footer .footer-bottom ul {
+    width: 300px;
+  }
+  .fixed {
+    width: 30px;
+    height: 30px;
+    bottom: 20px;
+    right: 20px;
+    padding-top: 6px;
+  }
+}
+/*# sourceMappingURL=responsive.css.map */

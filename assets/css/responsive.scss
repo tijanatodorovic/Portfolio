@@ -1,0 +1,646 @@
+// LAPTOP
+@media screen and (max-width: 1025px) {  
+  // Logo
+  nav {
+    .logo {
+      font-size: 35px;
+    }
+  }
+  // Home
+  .bgImage {
+    height: 600px;
+    &-transparent{
+      .bgImage-text {
+        margin: 65px 0px 0px 70px;
+        padding: 18px; 
+        h2 {
+          font-size: 50px;
+        }
+        h1 {
+          font-size: 60px;
+        }
+      }
+    }
+  } 
+
+  // Sekcija about me
+  .about {
+    margin: 100px 20px;
+  }
+}
+@media screen and (max-width: 987px) {
+  .services {
+    &-flex {
+      .services-wrapper {
+        width: 250px;
+        height: 320px;
+      }
+    }
+  }   
+}
+@media screen and (max-width: 906px) {
+  .services {
+    &-flex {
+      .services-wrapper {
+        width: 250px;
+        height: 370px;
+      }
+    }
+  }   
+  
+}
+@media screen and (max-width: 889px) {
+  nav {
+    .logo {
+      padding-left: 100px;
+    }
+  }
+
+  .about {
+    .profile {
+      &-pic {
+        height: 400px;
+      }
+    }
+  }
+}
+// TABLET
+@media screen and (max-width: 769px) {
+  // Logo
+  nav {
+    .logo {
+      font-size: 32px;
+      padding-left: 50px;
+    }
+    ul {
+      padding-right: 10px;
+      li {
+        padding-right: 25px;     
+      } 
+    }
+  }
+
+  // Home
+  .bgImage {
+    background-position: center;
+    height: 550px;
+    &-transparent{
+      background-color: rgba(13, 12, 12, 0.1);
+      .bgImage-text {
+        margin: 62px 0px 0px 60px;
+        h2 {
+          font-size: 50px;
+        }
+        h1 {
+          font-size: 60px;
+        }
+      }
+    } 
+  }
+
+  // Sekcija about me
+  .about {
+    margin: 100px 5px;
+    .profile {
+      width: 85%;
+      margin: 70px auto;
+      &-pic {
+        height: 400px;
+      }
+    }
+  }
+
+  // Services
+  .services-flex {
+    flex-wrap: wrap;
+    margin-top: unset;
+    .services-wrapper {
+      margin-top: 40px;
+      margin-right: unset;
+      height: 300px;
+      &-icon {
+        width: 55px;
+        height: 55px;
+        padding-top: 10px;
+        font-size: 25px;
+        margin-bottom: 12px;
+      }
+    }
+  }
+
+  // Portfolio
+  .project-wrapper {
+    .projectOne, .projectTwo {
+      background-position: top;
+    }
+    h3 a {
+      font-size: 22px;
+    }
+  }
+}
+@media screen and (max-width: 808px) {
+  nav {
+    .logo {
+      padding-left: 40px;
+    }
+  }
+  
+}
+@media screen and (max-width: 629px) {
+  nav {
+    .logo {
+      padding-left: 10px;
+    }
+  }
+}
+@media screen and (max-width: 671px) {
+  .search {
+    padding: 10px 10px 0px 0px;
+    i {
+      font-size: 11px;
+    }
+    visibility: hidden;
+  }
+
+  .profile {
+    flex-wrap: wrap;
+    margin: 0px auto;
+    &-info-left {
+      text-align: center;
+      margin-top: 20px;
+      .profile-info-mini {
+        margin-top: 12px;
+      }
+    }
+    &-pic {
+      margin: 0px auto;
+    }
+  }
+
+
+}
+@media screen and (max-width: 599px) {
+  nav {
+    height: 100px;
+    display: block;
+    .logo {
+      text-align: center;
+      padding-top: 9px;
+      padding-left: unset;
+    }
+  }
+}
+@media screen and (max-width: 511px) {
+  nav {
+    height: 100px;
+    display: block;
+    ul {
+      margin: 0px 70px;
+      &:last-child {
+        margin-right: unset;
+      }
+      li {
+        font-size: 16px;
+      }
+    }
+  }
+}
+// MOBILE *L*
+@media screen and (max-width: 426px) {
+  // Home
+  .bgImage {
+    background-position: left;
+    &-transparent{
+      background-color: rgba(13, 12, 12, 0.1);
+      .search {
+        padding: 10px 10px 0px 0px;
+        i {
+          font-size: 11px;
+        }
+        visibility: hidden;
+      }
+      .bgImage-text {
+        margin: 50px 0px 0px 20px;
+        h2 {
+          font-size: 40px;
+          text-shadow: 1px 1px 17px black;
+        }
+        h1 {
+          font-size: 52px;
+          padding-top: 17px;
+          padding-bottom: 18px;
+        }
+        &-moreAboutMe {
+          font-size: 15px;
+        }        
+      }
+    }              
+  }
+
+  // Sekcija about me
+  .profile {
+    flex-wrap: wrap;
+    margin: 0px auto;
+    &-info-left {
+      text-align: center;
+      margin-top: 20px;
+      .profile-info-mini {
+        margin-top: 12px;
+      }
+    }
+  }
+
+  // Projects
+  .portfolio {
+    &-header p {
+      padding: 12px 15px 0px 15px;
+      line-height: 25px;
+    }
+    &-projects {
+      display: block;
+      .project-wrapper {
+        width: 85%;
+        margin: 0px auto;
+        margin-top: 25px;
+        &:first-child {
+          margin-top: unset;
+        }
+      }
+    }
+  }
+
+  // Contact
+  .contact-me {
+    width: 300px;
+    input[type="text"], input[type="email"], textarea {
+      width: 300px;
+    }
+    textarea {
+      height: 200px;
+      text-align: left;
+    }
+    input[type="submit"] {
+      width: 120px;
+      padding: 12px 0px;
+      font-size: 20px;
+    }
+  }
+
+  // Fixni div
+  .fixed {
+    width: 35px;
+    height: 35px;
+    border: 1px solid white;
+    right: 5px;
+    bottom: 5px;
+    padding-top: 9px;
+    font-size: 12px;
+  }
+}
+@media screen and (max-width: 453px) {
+  nav {
+    height: 100px;
+    display: block;
+    ul {
+      margin: 0px 100px;
+      &:last-child {
+        margin-right: unset;
+      }
+      li {
+        font-size: 14px;
+      }
+    }
+  }
+}
+@media screen and (max-width: 415px) {
+  nav {
+    height: 235px;
+    margin-top: unset;
+    ul {
+      width: 100%;
+      text-align: center;
+      display: flex;
+      flex-direction: column;
+      padding-right: unset;
+      padding-top: 15px;
+      li {
+         font-size: 16px;
+         padding-right: unset;
+         border-bottom: 2px solid white;
+         padding: 2px 0px;
+         &:last-child {
+           border-bottom: none;
+         }
+       } 
+     }
+   }
+}
+@media screen and (max-width: 396px) {
+  .skills {
+    .progress-bar-bg {
+      .progress-bar {
+        width: 220px;
+        &-skill {
+          &-text {
+            width: 220px;
+            height: 15px;
+            line-height: 10px;
+            font-size: 14px;
+          }
+          &-out {
+            width: 220px;
+            height: 15px;
+            transition: width 1s;
+            &:hover {
+              width: 250px;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .fixed {
+    width: 40px;
+    height: 40px;
+    bottom: 50px;
+    right: 50px;
+    padding-top: 11px;
+  }
+  
+}
+// MOBILE *M*
+@media screen and (max-width: 376px) {
+  // Home
+  .bgImage {
+    background-position: center;
+    &-transparent{
+      background-color: rgba(13, 12, 12, 0.2);
+      .bgImage-text {
+        margin: 20px 0px 0px 20px;
+        h2 {
+          font-size: 33px;
+        }
+        h1 {
+          font-size: 45px;
+          padding-top: 17px;
+          padding-bottom: 12px;
+        }
+        &-UI h3 {
+          font-size: 16px;
+        }
+        &-moreAboutMe {
+          font-size: 14px;
+          width: 160px;
+          margin: 15px auto;
+        }        
+      }
+    }              
+  }
+
+  // About me
+  .about {
+    margin: 20px;
+    &-headers {
+      h4 {
+        font-size: 16px;
+      }
+      h2 {
+        font-size: 25px;
+      }
+    }
+    .profile {
+      margin: 33px auto;
+      &-info {
+        padding-right: 25px;
+        width: 500px;
+        margin: 0px auto;
+        h3 {
+          font-size: 20px;
+        }
+        .special-parag {
+          font-size: 16px;
+          text-align: justify;
+        }
+        &-mini {
+          margin: 6px 0px;
+          p {
+            font-size: 15px;
+          }
+        }
+      }
+    }
+  }
+
+  // Skills 
+  .about-headers {
+    margin-top: 40px;
+    h4 {
+      font-size: 16px;
+    }
+    h2 {
+      font-size: 25px;
+    }
+  }
+
+  .skills {
+    .progress-bar-bg {
+      .progress-bar {
+        width: 220px;
+        &-skill {
+          &-text {
+            width: 220px;
+            height: 15px;
+            line-height: 10px;
+            font-size: 14px;
+          }
+          &-out {
+            width: 220px;
+            height: 15px;
+            transition: width 1s;
+            &:hover {
+              width: 250px;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  // Services 
+  .services {
+    &-flex {
+      width: 65%;
+      .services-wrapper {
+        &-icon {
+          width: 55px;
+          height: 55px;
+          margin: 0px auto;
+          padding-top: 15px;
+          font-size: 20px;
+          margin-bottom: 12px;
+        }
+      }
+    }  
+  }
+
+  // Projects
+  .portfolio-projects {
+    width: 85%;
+    .project-wrapper {
+      h3 a {
+        font-size: 20px;
+      }
+      .projectOne, .projectTwo {
+        height: 200px;
+      }
+    }
+  }
+
+  // Contact
+  .contact-me {
+    width: 250px;
+    input[type="text"], input[type="email"], textarea {
+      width: 250px;
+      padding: 10px;
+    }
+    textarea {
+      height: 120px;
+    }
+    input[type="submit"] {
+      width: 100px;
+      padding: 10px 0px;
+      font-size: 18px;
+    }
+  }
+
+  footer {
+    .footer-top {
+      font-size: 13px;
+    } 
+    .footer-bottom {
+      ul {
+        width: 350px;
+      }
+    }
+  }
+}
+// MOBILE *S*
+@media screen and (max-width: 321px) {
+  // Home
+  .bgImage {
+    &-transparent{
+      .bgImage-text {
+        margin: 30px 0px 0px 20px;
+        h2 {
+          font-size: 28px;
+        }
+        h1 {
+          font-size: 42px;
+          padding-top: 17px;
+          padding-bottom: 10px;
+        }
+        &-UI h3 {
+          font-size: 13px;
+        }
+        &-moreAboutMe {
+          font-size: 11px;
+          width: 120px;
+          margin: 11px auto;
+          padding: 9px 0px;
+        }        
+      }
+    }              
+  }
+
+  // About me section
+  .about {
+    margin: 10px;
+    &-headers {
+      h4 {
+        font-size: 14px;
+      }
+      h2 {
+        font-size: 20px;
+      }
+    }
+    .profile {
+      margin: 30px auto;
+      &-info {
+        padding-right: 25px;
+        width: 500px;
+        margin: 0px auto;
+        h3 {
+          font-size: 17px;
+        }
+        .special-parag {
+          font-size: 14px;
+          text-align: justify;
+        }
+        &-mini {
+          margin: 6px 0px;
+          h4 {
+            font-size: 14px;
+          }
+          p {
+            font-size: 13px;
+          }
+        }
+      }
+      &-pic {
+        height: 300px;
+      }
+    }
+  }
+
+  // Skills
+  .about-headers {
+    margin-top: 50px;
+    h4 {
+      font-size: 15px;
+    }
+    h2 {
+      font-size: 20px;
+    }
+  }
+
+  // Contact
+  .contact-header {
+    text-align: center;
+    padding-top: 40px;
+    padding-bottom: unset;
+    color: white; 
+    margin: 0px auto;
+  }
+  .socials {
+    a {
+      i {
+        padding-bottom: 15px;
+        font-size: 13px;
+      }
+    }
+    width: 30px;
+    padding: 9px 0px 9px 9px;
+  }
+
+  // Footer
+  footer {
+    .footer-top {
+      font-size: 13px;
+    } 
+    .footer-bottom {
+      ul {
+        width: 300px;
+      }
+    }
+  }
+
+  .fixed {
+    width: 30px;
+    height: 30px;
+    bottom: 20px;
+    right: 20px;
+    padding-top: 6px;
+  }
+
+}

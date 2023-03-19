@@ -1,0 +1,3 @@
+User-agent:*
+Disallow:
+Sitemap:https://portfoliotijanatodorovic.000webhostapp.com/index.html/sitemap.xml

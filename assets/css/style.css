@@ -1,0 +1,647 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul {
+  list-style-type: none;
+}
+
+nav {
+  width: 100%;
+  height: 60px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  background-image: -webkit-gradient(linear, left top, right top, from(rgba(153, 151, 151, 0.8)), to(rgba(8, 7, 7, 0.9)));
+  background-image: linear-gradient(to right, rgba(153, 151, 151, 0.8), rgba(8, 7, 7, 0.9));
+  margin: 10px 0px;
+}
+
+nav a {
+  color: white;
+}
+
+nav .logo {
+  font-family: "Bilbo Swash Caps", cursive;
+  font-size: 40px;
+  padding-left: 150px;
+  padding-top: 9px;
+}
+
+nav ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  float: right;
+  font-family: "Tajawal", sans-serif;
+  padding-right: 30px;
+  padding-top: 15px;
+}
+
+nav ul:last-child {
+  margin-right: none;
+}
+
+nav ul li {
+  padding-right: 35px;
+  font-size: 18px;
+}
+
+nav ul li a:hover {
+  font-weight: 700;
+  text-shadow: 1px 1px 3px black;
+}
+
+.bgImage {
+  width: 100%;
+  height: 700px;
+  background-image: url(../images/slika-7.jpg);
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: right top;
+}
+
+.bgImage-transparent {
+  height: inherit;
+  background-color: rgba(13, 12, 12, 0.1);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.bgImage-transparent .search {
+  padding: 50px 50px 0px 0px;
+}
+
+.bgImage-transparent .search i {
+  color: black;
+}
+
+.bgImage-transparent .bgImage-text {
+  margin: 100px 0px 0px 120px;
+  padding: 20px;
+  text-align: center;
+  position: relative;
+  -webkit-animation-name: animationOne;
+          animation-name: animationOne;
+  -webkit-animation-duration: 3s;
+          animation-duration: 3s;
+}
+
+.bgImage-transparent .bgImage-text h2 {
+  font-family: "Bilbo Swash Caps", cursive;
+  font-size: 60px;
+  color: white;
+  text-shadow: 3px 3px 17px black;
+}
+
+.bgImage-transparent .bgImage-text h1 {
+  font-family: "Pattaya", sans-serif;
+  font-size: 70px;
+  text-shadow: 2px 2px 14px white, -2px -2px 14px white;
+  color: #4a4a4a;
+}
+
+.bgImage-transparent .bgImage-text h1 .tijana {
+  color: black;
+}
+
+.bgImage-transparent .bgImage-text-UI, .bgImage-transparent .bgImage-text-moreAboutMe {
+  font-family: "Tajawal", sans-serif;
+  padding-top: 17px;
+}
+
+.bgImage-transparent .bgImage-text-moreAboutMe {
+  width: 180px;
+  border: 2px solid black;
+  border-radius: 20px 0px;
+  -webkit-box-shadow: 4px 4px 8px black;
+          box-shadow: 4px 4px 8px black;
+  text-align: center;
+  margin: 30px auto;
+  padding: 12px 0px;
+  background-color: rgba(255, 255, 255, 0.5);
+  -webkit-transition: -webkit-transform 1s;
+  transition: -webkit-transform 1s;
+  transition: transform 1s;
+  transition: transform 1s, -webkit-transform 1s;
+}
+
+.bgImage-transparent .bgImage-text-moreAboutMe:hover {
+  -webkit-transform: rotateZ(10deg);
+          transform: rotateZ(10deg);
+}
+
+.bgImage-transparent .bgImage-text-moreAboutMe a {
+  color: black;
+  font-weight: 700;
+}
+
+.bgImage-transparent .bgImage-text-moreAboutMe a i {
+  color: #4a4a4a;
+}
+
+@-webkit-keyframes animationOne {
+  0% {
+    right: 1000px;
+  }
+  100% {
+    right: 0px;
+  }
+}
+
+@keyframes animationOne {
+  0% {
+    right: 1000px;
+  }
+  100% {
+    right: 0px;
+  }
+}
+
+.about {
+  margin: 100px 80px;
+}
+
+.about-headers {
+  text-align: center;
+  margin-bottom: 25px;
+  line-height: 35px;
+  font-family: "Tajawal", sans-serif;
+}
+
+.about-headers h4 {
+  font-size: 17px;
+  color: #ed8032;
+}
+
+.about-headers h2 {
+  font-size: 30px;
+  font-weight: 800;
+}
+
+.about-headers .border-longer {
+  width: 90px;
+  border-bottom: 3.5px solid grey;
+  border-radius: 50%;
+  margin: 10px auto;
+}
+
+.about-headers .border-shorter {
+  width: 50px;
+  border-bottom: 3.5px solid #ed8032;
+  border-radius: 50%;
+  margin: 10px auto;
+}
+
+.about .profile {
+  width: 75%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 70px auto;
+  font-family: "Tajawal", sans-serif;
+}
+
+.about .profile-info {
+  padding-right: 25px;
+  width: 500px;
+  margin: 0px auto;
+}
+
+.about .profile-info h3 {
+  font-weight: 700;
+  font-size: 25px;
+}
+
+.about .profile-info .special-parag {
+  font-size: 17px;
+  margin-bottom: 10px;
+  text-align: justify;
+}
+
+.about .profile-info-mini {
+  margin: 6px 0px;
+}
+
+.about .profile-info-mini p {
+  font-size: 15px;
+}
+
+.about .profile-info-mini i {
+  color: #ed8032;
+}
+
+.about .profile-pic {
+  width: 350px;
+  background-image: url(../images/ME.jpeg);
+  background-size: cover;
+  border-radius: 0% 50%;
+  border-right: 4px groove #ed8032;
+  border-left: 4px solid #a39f9f;
+  margin-top: 44px;
+}
+
+.skills {
+  width: 100%;
+  height: 350px;
+  background-image: url(../images/slika-18.jpg);
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: left-center;
+}
+
+.skills .progress-bar-bg {
+  width: 100%;
+  height: inherit;
+  background-image: -webkit-gradient(linear, left top, right top, from(rgba(163, 159, 159, 0.7)), to(rgba(237, 128, 50, 0.9)));
+  background-image: linear-gradient(to right, rgba(163, 159, 159, 0.7), rgba(237, 128, 50, 0.9));
+  padding-top: 60px;
+}
+
+.skills .progress-bar-bg .progress-bar {
+  width: 300px;
+  margin: 0px auto;
+  font-family: "Tajawal", sans-serif;
+}
+
+.skills .progress-bar-bg .progress-bar-skill {
+  padding: 10px 0px;
+}
+
+.skills .progress-bar-bg .progress-bar-skill-text {
+  width: 300px;
+  height: 15px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  line-height: 10px;
+}
+
+.skills .progress-bar-bg .progress-bar-skill-text p {
+  float: right;
+}
+
+.skills .progress-bar-bg .progress-bar-skill-out {
+  width: 300px;
+  height: 15px;
+  background-color: grey;
+  border-radius: 20px;
+  -webkit-box-shadow: 1px 1px 8px 5px #4a4a4a;
+          box-shadow: 1px 1px 8px 5px #4a4a4a;
+  -webkit-transition: width 1s;
+  transition: width 1s;
+}
+
+.skills .progress-bar-bg .progress-bar-skill-out:hover {
+  width: 350px;
+}
+
+.skills .progress-bar-bg .progress-bar-skill-out .progress-bar-skill-inside1 {
+  width: 95%;
+  height: inherit;
+  background-color: #ed8032;
+  border-radius: 20px;
+}
+
+.skills .progress-bar-bg .progress-bar-skill-out .progress-bar-skill-inside2 {
+  width: 85%;
+  height: inherit;
+  background-color: #ed8032;
+  border-radius: 20px;
+}
+
+.skills .progress-bar-bg .progress-bar-skill-out .progress-bar-skill-inside3 {
+  width: 80%;
+  height: inherit;
+  background-color: #ed8032;
+  border-radius: 20px;
+}
+
+.services {
+  width: 100%;
+  height: auto;
+  margin: 90px 0px;
+}
+
+.services h4 {
+  color: #ed8032;
+}
+
+.services-flex {
+  width: 85%;
+  height: inherit;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  margin: 50px auto;
+  font-family: "Tajawal", sans-serif;
+}
+
+.services-flex .services-wrapper {
+  width: 250px;
+  height: 300px;
+  margin-right: 15px;
+  text-align: center;
+  border: 2px solid #ed8032;
+  padding: 20px 13px 12px;
+  -webkit-box-shadow: 2px 2px 15px  grey;
+          box-shadow: 2px 2px 15px  grey;
+  -webkit-transition: -webkit-transform 0.5s;
+  transition: -webkit-transform 0.5s;
+  transition: transform 0.5s;
+  transition: transform 0.5s, -webkit-transform 0.5s;
+}
+
+.services-flex .services-wrapper:hover {
+  -webkit-transform: rotate(10deg);
+          transform: rotate(10deg);
+}
+
+.services-flex .services-wrapper:last-child {
+  margin-right: unset;
+}
+
+.services-flex .services-wrapper-icon {
+  width: 65px;
+  height: 65px;
+  margin: 0px auto;
+  padding-top: 15px;
+  font-size: 30px;
+  border-radius: 50%;
+  background-color: #ed8032;
+  -webkit-box-shadow: 1px 1px 9px  grey;
+          box-shadow: 1px 1px 9px  grey;
+  margin-bottom: 12px;
+}
+
+.services-flex .services-wrapper-icon i {
+  text-shadow: 0.5px 0.5px 3px white;
+}
+
+.services-flex .services-wrapper-service {
+  margin: 10px 0px;
+  color: #4a4a4a;
+}
+
+.services-flex .services-wrapper-text {
+  margin-top: 20px;
+  color: #4a4a4a;
+}
+
+.portfolio {
+  width: 100%;
+  background-color: #4a4a4a;
+  font-family: "Tajawal", sans-serif;
+  padding-bottom: 120px;
+  padding-top: 40px;
+}
+
+.portfolio-header {
+  text-align: center;
+  padding-top: 20px;
+  padding-bottom: 40px;
+  color: white;
+  line-height: 35px;
+}
+
+.portfolio-header h2 {
+  font-size: 25px;
+  text-shadow: 1px 1px 3px black;
+}
+
+.portfolio-header h2 .my {
+  color: #ed8032;
+}
+
+.portfolio-projects {
+  width: 90%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  margin: 0px auto;
+}
+
+.portfolio-projects .project-wrapper {
+  width: 40%;
+  background-color: #ed8032;
+  text-align: center;
+  -webkit-box-shadow: 1px 1px 10px black;
+          box-shadow: 1px 1px 10px black;
+  padding: 12px;
+  border-radius: 20px 0px;
+  -webkit-transition: -webkit-transform 1s;
+  transition: -webkit-transform 1s;
+  transition: transform 1s;
+  transition: transform 1s, -webkit-transform 1s;
+}
+
+.portfolio-projects .project-wrapper:hover {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+}
+
+.portfolio-projects .project-wrapper h3 {
+  font-size: 25px;
+  font-weight: 700;
+}
+
+.portfolio-projects .project-wrapper h3 a {
+  color: black;
+}
+
+.portfolio-projects .project-wrapper h4 {
+  font-style: italic;
+}
+
+.portfolio-projects .project-wrapper .projectOne {
+  height: 300px;
+  background-image: url(../images/teretana.jpg);
+  background-size: cover;
+}
+
+.portfolio-projects .project-wrapper .projectOne .oneTransparent {
+  height: inherit;
+  background-color: rgba(8, 7, 7, 0.8);
+}
+
+.portfolio-projects .project-wrapper .projectTwo {
+  height: 300px;
+  background-image: url(../images/portfolio.jpg);
+  background-size: cover;
+}
+
+.portfolio-projects .project-wrapper .projectTwo .oneTransparent {
+  height: inherit;
+  background-color: rgba(8, 7, 7, 0.9);
+}
+
+.contact {
+  width: 100%;
+  height: auto;
+  background-image: url(../images/slika-6.jpg);
+  background-position: center;
+  background-size: cover;
+  font-family: "Tajawal", sans-serif;
+}
+
+.contact-transp {
+  background-color: rgba(8, 7, 7, 0.9);
+}
+
+.contact-header {
+  text-align: center;
+  padding: 50px 0px;
+  color: white;
+  margin: 0px auto;
+}
+
+.contact-header .border-longer {
+  width: 90px;
+  border-bottom: 3.5px solid grey;
+  border-radius: 50%;
+  margin: 10px auto;
+}
+
+.contact-header .border-shorter {
+  width: 50px;
+  border-bottom: 3.5px solid #ed8032;
+  border-radius: 50%;
+  margin: 10px auto;
+}
+
+.contact-me {
+  width: 350px;
+  margin: 0px auto;
+  text-align: center;
+}
+
+.contact-me input[type="text"], .contact-me input[type="email"], .contact-me textarea {
+  width: 350px;
+  padding: 13px;
+  border-radius: 30px;
+  margin: 10px 0px;
+  -webkit-box-shadow: 1px 1px 15px black;
+          box-shadow: 1px 1px 15px black;
+}
+
+.contact-me textarea {
+  height: 200px;
+  text-align: left;
+}
+
+.contact-me input[type="submit"] {
+  width: 125px;
+  border: 6px solid grey;
+  padding: 12px 0px;
+  background-color: #ed8032;
+  -webkit-box-shadow: 1px 1px 15px black;
+          box-shadow: 1px 1px 15px black;
+  font-family: "Bilbo Swash Caps", cursive;
+  font-weight: 700;
+  font-size: 22px;
+  text-align: center;
+  margin: 20px 0px;
+}
+
+.contact .socials {
+  width: 60px;
+  background-color: #4a4a4a;
+  padding: 20px 0px 9px 20px;
+  border: 2px solid #ed8032;
+  -webkit-box-shadow: 1px 1px 10px black;
+          box-shadow: 1px 1px 10px black;
+}
+
+.contact .socials a {
+  color: white;
+  text-shadow: 1px 1px 10px black;
+  -webkit-transition: color 0.5s, text-shadow 0.5s;
+  transition: color 0.5s, text-shadow 0.5s;
+}
+
+.contact .socials a i {
+  padding-bottom: 15px;
+}
+
+.contact .socials a:hover {
+  color: #ed8032;
+}
+
+footer {
+  width: 100%;
+  height: 120px;
+  background-color: black;
+  color: white;
+  text-align: center;
+  padding-top: 20px;
+  font-family: "Tajawal", sans-serif;
+}
+
+footer .footer-bottom {
+  padding-top: 20px;
+}
+
+footer .footer-bottom ul {
+  width: 400px;
+  margin: 0px auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+}
+
+footer .footer-bottom ul li {
+  font-size: 20px;
+}
+
+footer .footer-bottom ul li a {
+  color: #ed8032;
+}
+
+.fixed {
+  width: 50px;
+  height: 50px;
+  background-color: #4a4a4a;
+  border: 3px solid white;
+  border-radius: 50%;
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  text-align: center;
+  padding-top: 11px;
+}
+
+.fixed a {
+  color: white;
+}
+
+.fixed a:hover {
+  color: #ed8032;
+  text-shadow: 1px 1px 10px #4a4a4a;
+}
+/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,535 @@
+// Variables
+
+  // Fonts
+  $Tajawal:'Tajawal', sans-serif;
+  $Bilbo:'Bilbo Swash Caps', cursive;
+  $Pattaya:'Pattaya', sans-serif;
+
+  // Colours
+  $svetloSivaRGBA: rgba(153, 151, 151, 0.8);
+  $crnaRGBA: rgba(8, 7, 7, 0.9);
+  $siva1:#4a4a4a;
+  $svetlo-siva:rgb(163, 159, 159);
+  $narandzasta:#ed8032; 
+  
+  // Mixini:bordure
+@mixin borderLo {
+  width: 90px;
+  border-bottom: 3.5px solid grey;
+  border-radius: 50%;
+  margin: 10px auto;
+}
+
+@mixin borderSh {
+  width: 50px;
+  border-bottom: 3.5px solid $narandzasta;
+  border-radius: 50%;
+  margin: 10px auto;
+}
+
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+a{
+  text-decoration: none;
+}
+
+ul {
+  list-style-type: none;
+}
+
+// Navigacioni bar
+nav {
+  width: 100%;
+  height: 60px;
+  display: flex;
+  justify-content: space-between;
+  background-image: linear-gradient(to right, $svetloSivaRGBA, $crnaRGBA);
+  margin: 10px 0px;
+  a{
+    color: white;
+  }
+  .logo {
+    font: {
+      family: $Bilbo;
+      size: 40px;
+    }
+    padding-left: 150px;
+    padding-top: 9px;
+  }
+  ul {
+    display: flex;
+    float: right;
+    font-family: $Tajawal;
+    padding-right: 30px;
+    padding-top: 15px;
+    &:last-child {
+    margin-right: none;
+    }
+    li {
+      padding-right: 35px;
+      font-size: 18px;
+      a:hover {
+        font-weight: 700;
+        text-shadow: 1px 1px 3px black;
+      }   
+    } 
+  }
+}
+
+// HOME
+.bgImage {
+  width: 100%;
+  height: 700px;
+  background-image: url(../images/slika-7.jpg);
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: right top;
+  &-transparent{
+    height: inherit;
+    background-color: rgba(13, 12, 12, 0.1);
+    display: flex;
+    justify-content: space-between;
+    .search {
+      padding: 50px 50px 0px 0px;
+      i {
+        color: black;
+      }
+    }
+    .bgImage-text {
+      margin: 100px 0px 0px 120px;
+      padding: 20px;
+      text-align: center;
+      position: relative;
+      animation-name: animationOne;
+      animation-duration: 3s;
+      h2 {
+        font: {
+          family: $Bilbo;
+          size:60px;
+        }
+        color: white;
+        text-shadow: 3px 3px 17px black;
+      }
+      h1 {
+        font: {
+          family:$Pattaya;
+          size: 70px;
+        }
+        text-shadow: 2px 2px 14px white, -2px -2px 14px white;  
+        color: $siva1;   
+        .tijana {
+          color: black;
+        }  
+      }
+      &-UI, &-moreAboutMe {
+        font-family: $Tajawal;
+        padding-top: 17px;
+      }
+      &-moreAboutMe {
+        width: 180px;
+        border: 2px solid black;
+        border-radius: 20px 0px;
+        box-shadow: 4px 4px 8px black;
+        text-align: center;
+        margin: 30px auto;
+        padding: 12px 0px;
+        background-color: rgba($color:white, $alpha:0.5);
+        transition: transform 1s;
+        &:hover {
+          transform: rotateZ(10deg);
+        }
+        a {
+          color: black;
+          font-weight: 700;
+          i {
+            color: $siva1;
+          }
+        }
+      }
+    }
+  }
+}
+@keyframes animationOne {
+  0% {right: 1000px;}
+  100% {right: 0px;}
+}
+
+// Sekcija about me
+.about {
+  margin: 100px 80px;
+  &-headers {
+    text-align: center;
+    margin-bottom: 25px;
+    line-height: 35px;
+    font-family: $Tajawal;
+    h4 {
+      font-size: 17px;
+      color: $narandzasta;
+    }
+    h2 {
+      font: {
+        size: 30px;
+        weight: 800;
+      }
+    }
+    .border-longer {
+      @include borderLo;
+    }
+    .border-shorter {
+      @include borderSh;      
+    }
+  }
+  .profile {
+    width: 75%;
+    display: flex;
+    margin: 70px auto;
+    font-family: $Tajawal;
+    &-info {
+      padding-right: 25px;
+      width: 500px;
+      margin: 0px auto;
+      h3 {
+        font: {
+          weight: 700;
+          size: 25px;
+        } 
+      }
+      .special-parag {
+        font-size: 17px;
+        margin-bottom: 10px;
+        text-align: justify;
+      }
+      &-mini {
+        margin: 6px 0px;
+        p {
+          font-size: 15px;
+        }
+        i {
+          color: $narandzasta;
+        }
+      }
+    }
+    &-pic {
+      width: 350px;
+      background-image: url(../images/ME.jpeg);
+      background-size: cover;
+      border-radius: 0% 50%;
+      border-right: 4px groove $narandzasta ;
+      border-left: 4px solid $svetlo-siva;
+      margin-top: 44px;
+    }
+  }
+}
+
+// SKILLS
+.skills {
+  width: 100%;
+  height: 350px;
+  background-image: url(../images/slika-18.jpg);
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: left-center;
+  .progress-bar-bg {
+    width: 100%;
+    height: inherit;
+    background-image: linear-gradient(to right, rgba(163, 159, 159, 0.7), rgba($color:#ed8032, $alpha:0.9) );
+    padding-top: 60px;
+    .progress-bar {
+      width: 300px;
+      margin: 0px auto;
+      font-family: $Tajawal;
+      &-skill {
+        padding: 10px 0px;
+        &-text {
+          width: 300px;
+          height: 15px;
+          display: flex;
+          justify-content: space-between;
+          line-height: 10px;
+          p {
+            float: right;
+          }
+        }
+        &-out {
+          width: 300px;
+          height: 15px;
+          background-color: grey;
+          border-radius: 20px;
+          box-shadow: 1px 1px 8px 5px $siva1;
+          transition: width 1s;
+          &:hover {
+            width: 350px;
+          }
+          .progress-bar-skill-inside1 {
+            width: 95%;
+            height: inherit;
+            background-color: $narandzasta;
+            border-radius: 20px;
+          }
+          .progress-bar-skill-inside2 {
+            width: 85%;
+            height: inherit;
+            background-color: $narandzasta;
+            border-radius: 20px;
+          }
+          .progress-bar-skill-inside3 {
+            width: 80%;
+            height: inherit;
+            background-color: $narandzasta;
+            border-radius: 20px;
+          }
+        }
+      }
+    }
+  }
+}
+
+// SERVICES
+.services {
+  width: 100%;
+  height: auto;
+  margin: 90px 0px;
+  h4 {
+    color: $narandzasta;
+  }
+  &-flex {
+    width: 85%;
+    height: inherit;
+    display: flex;
+    justify-content: space-evenly;
+    margin: 50px auto;
+    font-family: $Tajawal;
+    .services-wrapper {
+      width: 250px;
+      height: 300px;
+      margin-right: 15px;
+      text-align: center;
+      border: 2px solid $narandzasta;
+      padding: 20px 13px 12px;
+      box-shadow: 2px 2px 15px  grey;
+      transition:transform 0.5s;
+      &:hover {
+        transform: rotate(10deg);  
+      }
+      &:last-child {
+        margin-right: unset;
+      }
+      &-icon {
+        width: 65px;
+        height: 65px;
+        margin: 0px auto;
+        padding-top: 15px;
+        font-size: 30px;
+        border-radius: 50%;
+        background-color: $narandzasta;
+        box-shadow: 1px 1px 9px  grey;
+        margin-bottom: 12px;
+        i {
+          text-shadow: 0.5px 0.5px 3px white;
+        }
+      }
+      &-service {
+        margin: 10px 0px;
+        color: $siva1;
+      }
+      &-text {
+        margin-top: 20px;
+        color: $siva1;
+      }
+    }
+  }
+}
+
+// PORTFOLIO
+.portfolio {
+  width: 100%;
+  background-color: $siva1;
+  font-family: $Tajawal;
+  padding-bottom: 120px;
+  padding-top: 40px;
+  &-header {
+    text-align: center;
+    padding-top: 20px;
+    padding-bottom: 40px;
+    color: white;
+    line-height: 35px;
+    h2 {
+      font-size: 25px;
+      text-shadow: 1px 1px 3px black;
+      .my {
+        color: $narandzasta;
+      }
+    }
+  } 
+  &-projects {
+    width: 90%;
+    display: flex;
+    justify-content: space-evenly;
+    margin: 0px auto;
+    .project-wrapper {
+      width: 40%;
+      background-color:$narandzasta ;
+      text-align: center;
+      box-shadow: 1px 1px 10px black;
+      padding: 12px;
+      border-radius: 20px 0px;
+      transition: transform 1s;
+      &:hover {
+        transform: scale(1.1);
+        
+      }
+      h3 {
+        font-size: 25px;
+        font-weight: 700;
+        a {
+          color: black;
+        }
+      }
+      h4 {
+        font-style: italic;
+      }
+      .projectOne {
+        height: 300px;
+        background-image: url(../images/teretana.jpg);
+        background-size: cover;
+        .oneTransparent {
+          height: inherit;
+          background-color: rgba(8, 7, 7, 0.8);
+        }
+      }
+      .projectTwo {
+        height: 300px;
+        background-image: url(../images/portfolio.jpg);
+        background-size: cover;
+        .oneTransparent {
+          height: inherit;
+          background-color: rgba(8, 7, 7, 0.9);
+        }
+      }
+    }
+  }
+}
+
+// CONTACT
+.contact {
+  width: 100%;
+  height: auto;
+  background-image: url(../images/slika-6.jpg);
+  background-position: center;
+  background-size: cover;
+  font-family: $Tajawal;
+  &-transp {
+    background-color: rgba(8, 7, 7, 0.9);
+  }
+  &-header {
+    text-align: center;
+    padding: 50px 0px;
+    color: white; 
+    margin: 0px auto;
+    .border-longer {
+      @include borderLo();
+    }
+    .border-shorter {
+      @include borderSh();
+    }
+  }
+  &-me {
+    width: 350px;
+    margin: 0px auto;
+    text-align: center;
+    input[type="text"], input[type="email"], textarea {
+      width: 350px;
+      padding: 13px;
+      border-radius: 30px;
+      margin: 10px 0px;
+      box-shadow: 1px 1px 15px black;
+    }
+    textarea {
+      height: 200px;
+      text-align: left;
+    }
+    input[type="submit"] {
+      width: 125px;
+      border: 6px solid grey;
+      padding: 12px 0px;
+      background-color: $narandzasta;
+      box-shadow: 1px 1px 15px black;
+      font: {
+        family:$Bilbo;
+        weight: 700 ;
+        size: 22px;
+      }
+      text-align: center;
+      margin: 20px 0px;
+    }
+  }
+  .socials {
+    a {
+      color: white;
+      text-shadow: 1px 1px 10px black;
+      i {
+        padding-bottom: 15px;
+      }
+      transition: color 0.5s, text-shadow 0.5s;
+      &:hover {
+        color: $narandzasta;
+      }
+    }
+    width: 60px;
+    background-color: $siva1;
+    padding: 20px 0px 9px 20px;
+    border: 2px solid $narandzasta;
+    box-shadow: 1px 1px 10px black;
+  }
+}
+
+// FOOTER
+footer {
+  width: 100%;
+  height: 120px;
+  background-color: black;
+  color: white;
+  text-align: center;
+  padding-top: 20px;
+  font-family: $Tajawal;
+  .footer-bottom {
+    padding-top: 20px;
+    ul {
+      width: 400px;
+      margin: 0px auto;
+      display: flex;
+      justify-content: space-evenly;
+      li {
+        font-size: 20px;
+        a {
+          color: $narandzasta;
+        }
+      }
+    }
+  }
+}
+
+// FIXNI DIV
+.fixed {
+  width: 50px;
+  height: 50px;
+  background-color: $siva1;
+  border: 3px solid white;
+  border-radius: 50%;
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  text-align: center;
+  padding-top: 11px;
+  a {
+    color: white;
+    &:hover {
+      color: $narandzasta;
+      text-shadow: 1px 1px 10px $siva1;      
+    }
+  }
+}
